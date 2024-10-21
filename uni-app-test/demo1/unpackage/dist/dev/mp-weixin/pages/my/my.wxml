@@ -1,0 +1,1 @@
+<view><mybox vue-id="704e9d00-1" subtitle="我的小标题" bind:__l="__l"></mybox><view class="my"></view></view>

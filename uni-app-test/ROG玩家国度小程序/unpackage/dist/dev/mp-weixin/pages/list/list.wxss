@@ -1,0 +1,45 @@
+.menu .active {
+  color: #0c34ba;
+}
+.menu .search {
+  -webkit-animation: fadeInDown;
+          animation: fadeInDown;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.menu .fix {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  height: 155px;
+  top: 0;
+}
+.menu .van-grid {
+  -webkit-animation: fadeInBottomLeft;
+          animation: fadeInBottomLeft;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.menu .result-box {
+  z-index: -1;
+  -webkit-animation: fadeInBottomRight;
+          animation: fadeInBottomRight;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  margin-top: 235px;
+  padding-bottom: 55px;
+}
+.menu .menu-item {
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  background: snow;
+  margin: 10px;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,61 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "腾讯新闻",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/todetail/todetail",
+			"style": {
+				"navigationBarTitleText": "头条新闻",
+				"enablePullDownRefresh": true
+			}
+
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "头条新闻详情",
+				"enablePullDownRefresh": true
+			}
+
+		},
+
+
+		{
+			"path": "pages/tx-detail/tx-detail",
+			"style": {
+				"navigationBarTitleText": "腾讯新闻详情",
+				"enablePullDownRefresh": true
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "腾讯新闻",
+				"iconPath": "static/tx.png",
+				"selectedIconPath": "static/tx-h.png"
+			},
+			{
+				"pagePath": "pages/todetail/todetail",
+				"text": "头条新闻",
+				"iconPath": "static/tt.png",
+				"selectedIconPath": "static/tt-h.png"
+			}
+		]
+	}
+}

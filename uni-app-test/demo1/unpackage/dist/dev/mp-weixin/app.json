@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/about/about",
+    "pages/my/my",
+    "pages/test/test",
+    "pages/detail/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "static/images/主页 (1).png",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "static/images/主页.png"
+      },
+      {
+        "text": "游戏",
+        "iconPath": "static/images/游戏 (1).png",
+        "pagePath": "pages/list/list",
+        "selectedIconPath": "static/images/Word.png"
+      },
+      {
+        "text": "人物",
+        "iconPath": "static/images/游戏-9.png",
+        "pagePath": "pages/about/about",
+        "selectedIconPath": "static/images/QQ.png"
+      },
+      {
+        "text": "角色",
+        "iconPath": "/static/images/微信.png",
+        "pagePath": "pages/my/my",
+        "selectedIconPath": "static/images/抖音.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

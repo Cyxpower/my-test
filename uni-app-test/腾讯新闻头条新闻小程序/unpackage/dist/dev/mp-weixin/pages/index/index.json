@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "腾讯新闻",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "newsbox": "/components/newsbox/newsbox"
+  }
+}

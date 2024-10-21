@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/todetail/todetail",
+    "pages/detail/detail",
+    "pages/tx-detail/tx-detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "腾讯新闻",
+        "iconPath": "static/tx.png",
+        "selectedIconPath": "static/tx-h.png"
+      },
+      {
+        "pagePath": "pages/todetail/todetail",
+        "text": "头条新闻",
+        "iconPath": "static/tt.png",
+        "selectedIconPath": "static/tt-h.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于获取用户位置"
+    },
+    "requiredPrivateInfos": [
+      "getLocation"
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,1 @@
+<view class="item"><view class="big">{{''+title+''}}</view><view class="small">{{''+subtitle+''}}</view><view class="line"></view><view><input type="text" placeholder="请输入..." data-event-opts="{{[['input',[['oninput',['$event']]]]]}}" bindinput="__e"/></view></view>

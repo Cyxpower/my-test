@@ -1,0 +1,148 @@
+.home .search-box {
+  -webkit-animation: fadeInDown;
+          animation: fadeInDown;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  height: 55px;
+  display: flex;
+  overflow: hidden;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+.home .time-user {
+  background: linear-gradient(to right, #BAD4E3, white);
+  flex: 1.7;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 55px;
+}
+.home .time-user ._span {
+  line-height: 50px;
+  align-items: center;
+  color: #0c34ba;
+}
+.home .search {
+  flex: 3;
+}
+.home .home-content {
+  padding: 10px;
+}
+.home .swiper {
+  height: 430rpx;
+}
+.home .banner {
+  margin-top: 50px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 275px;
+}
+.home .banner .notice-swipe {
+  height: 40px;
+  line-height: 40px;
+}
+.home .banner ._img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+}
+.home .hot-recommend {
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  height: 45px;
+  background: white;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.home .hot-recommend .text {
+  text-align: -webkit-center;
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(to right, #BAD4E3, white);
+  font-size: 22px;
+  color: #3E74A8;
+  line-height: 40px;
+  margin-top: 5px;
+  border-radius: 0 20px 0 0;
+}
+.home .product-box {
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  /* don't forget to set a duration! */
+  overflow: hidden;
+  padding-bottom: 50px;
+  background: #f7f7f7;
+}
+.home .product-item {
+  display: flex;
+  float: left;
+  width: calc(50% - 10px);
+  height: 280px;
+  margin-right: 12px;
+  margin-top: 25px;
+  font-size: 12px;
+  position: relative;
+  border-radius: 10px;
+  background: white;
+  flex-direction: column;
+}
+.home .product-item ._img {
+  height: 60%;
+  border-radius: 10px;
+  width: 100%;
+}
+.home .product-item:nth-child(2n) {
+  margin-right: 0px;
+}
+.home .product-name {
+  margin-top: 10px;
+  font-size: 13px;
+  margin-bottom: 7px;
+  color: #676a70;
+  font-weight: 900;
+  margin-left: 7px;
+}
+.home .product-name ._span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* 根据业务需求设置第几行显示省略号 */
+  overflow: hidden;
+}
+.home .product-enname {
+  font-size: 10px;
+  color: #bba8a4;
+  margin-left: 7px;
+}
+.home .product-enname ._span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* 根据业务需求设置第几行显示省略号 */
+  overflow: hidden;
+}
+.home .product-price {
+  color: red;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+.home .product-price .count_down {
+  color: #676767;
+  font-size: 7px;
+}
+
