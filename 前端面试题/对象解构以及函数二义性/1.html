@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const obj = {
+            name: '张三',
+            age: 18,
+            gender: '男',
+        }
+        const { name: a, age, gender } = obj; //解构赋值以及重命名
+        console.log(a, age, gender);
+
+
+        //箭头函数和普通函数的存在意义为 消除函数二义性
+        function A(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        const b = () => {
+
+        }
+        A() //普通函数
+        const stu = new A('哈哈',12) //普通函数
+        console.log(stu);
+        b() //箭头函数
+    </script>
+</body>
+
+</html>

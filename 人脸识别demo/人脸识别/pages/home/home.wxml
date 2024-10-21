@@ -1,0 +1,57 @@
+<view class="home" style="background: url({{backgroundImg}})no-repeat center / cover;">
+
+  <image class="bgImg" src="{{backgroundImg}}" mode="aspectFill"/>
+
+  <view class="home-bigBox" >
+
+    <!-- 用户头像 -->
+    <!-- 实现3d 立方体的效果 -->
+    <view class="home-box {{flash? 'active' : ''}}">
+      <view class="home-item front">
+        <image class="home-img" src="{{userPhoto}}"></image>
+      </view>
+      <view class="home-item before">
+        <image class="home-img" src="{{userPhoto}}"></image>
+      </view>
+      <view class="home-item left">
+        <image class="home-img" src="{{userPhoto}}"></image>
+      </view>
+      <view class="home-item right">
+        <image class="home-img" src="{{userPhoto}}"></image>
+      </view>
+      <view class="home-item top">
+        <image class="home-img" src="{{userPhoto}}"></image>
+      </view>
+      <view class="home-item bottom">
+        <image class="home-img" src="{{userPhoto}}"></image>
+      </view>
+
+
+
+      <view class="home-min min-front">
+        <image class="home-img" src="{{tempImgPath}}"></image>
+      </view>
+      <view class="home-min min-before">
+        <image class="home-img" src="{{tempImgPath}}"></image>
+      </view>
+      <view class="home-min min-left">
+        <image class="home-img" src="{{tempImgPath}}"></image>
+      </view>
+      <view class="home-min min-right">
+        <image class="home-img" src="{{tempImgPath}}"></image>
+      </view>
+      <view class="home-min min-top">
+        <image class="home-img" src="{{tempImgPath}}"></image>
+      </view>
+      <view class="home-min min-bottom">
+        <image class="home-img" src="{{tempImgPath}}"></image>
+      </view>
+    </view>
+
+  <!-- 用户的名称 -->
+  <view class="home-name">姓名: {{userName}}</view>
+
+  <button class="home-btn" bindtap="unLogin" type="primary">退出登录</button>
+  <button class="home-btn" bindtap="setBackImg" type="primary">更改背景</button>
+  </view>
+</view>

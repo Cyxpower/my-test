@@ -1,0 +1,69 @@
+<view class="face">
+    <!-- 图片 -->
+    <image class="faceImg" src="{{img_src}}" mode="widthFix"></image>
+
+    <!-- 人脸特征点 -->
+    <view>
+         <view 
+         wx:for="{{faceList.landmark150}}" 
+         wx:key="x"
+         class="landmark"
+         style="left:{{item.x * count}}px; top:{{item.y * count}}px"
+         ></view>   
+    </view>
+
+    <!-- 资料 -->
+    <view>
+        <view class="face-item">颜值:
+            <text class="face-box">{{faceList.beauty}} </text>
+        </view>
+
+        <view class="face-item">年龄:
+            <text class="face-box">{{faceList.age}} </text>
+        </view>
+
+        <view class="face-item">性别:
+            <text class="face-box">{{faceList.gender.type == 'female' ? '女' : '男' }} </text>
+        </view>
+        <view class="face-item">脸型:
+            <text class="face-box">{{
+                faceList.face_shape.type == 'square' ? '正方形' : 
+                faceList.face_shape.type == 'triangle' ? '三角形 ' : 
+                faceList.face_shape.type == 'oval' ? '椭圆' : 
+                faceList.face_shape.type == 'heart' ? '心形' : '圆形' 
+                }} 
+            </text>
+        </view>
+
+        <view class="face-item">情绪:
+            <text class="face-box">{{
+                faceList.emotion.type == 'angry' ? '愤怒' : 
+                faceList.emotion.type == 'disgust' ? '厌恶 ' : 
+                faceList.emotion.type == 'fear' ? '恐惧 ' : 
+                faceList.emotion.type == 'happy' ? '高兴' :
+                faceList.emotion.type == 'sad' ? '伤心 ' :
+                faceList.emotion.type == 'surprise' ? '惊讶 ' :
+                faceList.emotion.type == 'neutral' ? '无表情' :
+                faceList.emotion.type == 'pouty' ? '撅嘴' : '鬼脸'
+                }} 
+            </text>
+        </view>
+
+        <view class="face-item">表情:
+            <text class="face-box">{{
+                faceList.expression.type == 'none' ? '不笑' : 
+                faceList.expression.type == 'smile' ? '微笑 ' : '大笑'
+                }} 
+            </text>
+        </view>
+
+        <view class="face-item">眼镜:
+            <text class="face-box">{{
+                faceList.glasses.type == 'none' ? '无眼镜' : 
+                faceList.glasses.type == 'common' ? '普通眼镜 ' : '墨镜'
+                }} 
+            </text>
+        </view>
+
+    </view>
+</view>

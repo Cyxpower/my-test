@@ -1,0 +1,44 @@
+.camera-item {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* 其他工具 */
+.tools {
+    width: 100vw;
+    height: 10vh;
+    /* box-shadow: 0 0 1px 1px red; */
+    position: absolute;
+    left: 0;
+    bottom: 2vh;
+
+    display: flex;
+    justify-content: space-around;
+}
+.tools-item {
+    width: 10vh;
+    height: 10vh;
+    /* box-shadow: 0 0 1px 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tools-img {
+    width: 80%;
+    height: 80%;
+}
+.take {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 14vw;
+    height: 14vw;
+}
+.take::after {
+    content: "";
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50%;
+}

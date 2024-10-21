@@ -1,0 +1,10 @@
+<view class="login">
+    <camera class="login-camera" device-position="front"></camera>
+
+    <view class="login-btn">
+        <button type="primary" class="button" bindtap="onLogin">登录</button>
+        <button type="warn" class="button" bindtap="onRegister">注册</button>
+
+        <button type="default" class="button del" bindtap="ondelFace">注销人脸</button>
+    </view>
+</view>

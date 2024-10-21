@@ -1,0 +1,35 @@
+.face {
+    /* 640rpx = 320px */
+    width: 640rpx;
+    margin: 0 auto;
+    position: relative;
+}
+.faceImg {
+    /* 图片的宽度注意,需要是320px */
+    width: 320px;
+  
+    /* 圆角边框 */
+    border-radius: 24rpx;
+    /* 背景模糊 */
+    box-shadow: 6rpx 6rpx 20rpx 20rpx rgb(175, 168, 168);
+}
+.face-item {
+    line-height: 7vh;
+    border-bottom:2px solid rgb(235, 227, 227) ;
+    font-size: 14px;
+}
+.face-box {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20rpx;
+}
+
+/* 特征点的样式 */
+.landmark {
+    width: 8rpx;
+    height: 8rpx;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}

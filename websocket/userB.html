@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>用户B</title>
+</head>
+
+<body>
+    <div>
+        <h2>用户B</h2>
+        <input type="text" id="messageB" placeholder="用户B 输入消息">
+        <button onclick="sendMessage('B')">发送</button>
+    </div>
+    <div>
+        <h2>聊天记录</h2>
+        <div id="chatRecordB"></div>
+    </div>
+
+    <script>
+        const chatRecordB = document.getElementById('chatRecordB');
+        const messageInputB = document.getElementById('messageB');
+        const wsB = new WebSocket('ws://localhost:8080');
+
+        wsB.onopen = () => {
+            console.log('WebSocket连接已打开');
+        };
+
+        wsB.onmessage = (event) => {
+            const message = event.data;
+            console.log('收到消息:', message);
+
+            // 在聊天记录窗口中显示消息
+            chatRecordB.innerHTML += '<p>' + message + '</p>';
+        };
+
+        wsB.onclose = () => {
+            console.log('WebSocket连接已关闭');
+        };
+
+        function sendMessage(user) {
+            const message = user + ': ' + messageInputB.value;
+            console.log('发送的消息:', message);
+
+            // 追加消息到自己的聊天记录
+            chatRecordB.innerHTML += '<p>' + message + '</p>';
+
+            // 发送消息到服务器
+            wsB.send(message);
+            messageInputB.value = '';
+        }
+    </script>
+</body>
+
+</html>

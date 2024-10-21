@@ -1,0 +1,38 @@
+{
+  "name": "muban",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "animate.css": "^4.1.1",
+    "axios": "^0.26.1",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.11.7",
+    "element-ui": "^2.15.13",
+    "swiper": "^6.8.1",
+    "vant": "^2.12.47",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.4.1",
+    "vue-bus": "^1.2.1",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^5.0.4",
+    "@vue/cli-plugin-router": "^5.0.4",
+    "@vue/cli-service": "^5.0.4",
+    "babel-plugin-import": "^1.13.3",
+    "electron": "^25.4.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lib-flexible": "^0.3.2",
+    "postcss-pxtorem": "^6.0.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}

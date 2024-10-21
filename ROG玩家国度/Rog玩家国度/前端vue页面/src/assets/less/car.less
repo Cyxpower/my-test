@@ -1,0 +1,108 @@
+.car {
+
+
+    .big-car {
+        padding-bottom: 100px;
+
+    }
+
+    .car-top {
+        animation: fadeInDown;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        img {
+            margin-top: 46px;
+            width: 100%;
+
+        }
+    }
+
+    .car-item {
+        background: white;
+        margin: 10px;
+        height: 100px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .choose-item {
+        margin: 0 3px;
+    }
+
+    .car-content {
+        flex: 1;
+        height: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .detail-content {
+        
+        padding-top: inherit;
+        flex: 1;
+        padding-left: 10px;
+    }
+
+    .pro-name {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 13px;
+        width: 3.66667rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        /* 根据业务需求设置第几行显示省略号 */
+        overflow: hidden;
+    }
+
+    .type {
+        font-size: 10px;
+        color: gray;
+    }
+
+    .enname {
+        margin-top: 5px;
+        color: gray;
+    }
+
+    .price-step {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .price {
+        color: #0c34ba;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    .van-stepper--round .van-stepper__plus {
+        color: #fff;
+        background-color: #0c34ba;
+    }
+
+    .van-stepper--round .van-stepper__minus {
+        color: #c4cdee;
+        background-color: #0c34ba;
+        border: #7d7d7e;
+    }
+
+    .van-submit-bar {
+        animation: fadeInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        bottom: 50px;
+    }
+}

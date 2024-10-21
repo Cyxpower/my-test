@@ -1,0 +1,154 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,#BAD4E3,white);
+
+    .input {
+        animation: backInRight;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+    }
+
+    .nav-top {
+        animation: fadeIn;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+        height: 50px;
+        border-bottom: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #0c34ba;
+        }
+    }
+
+    .nav-right {
+        animation: swing;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1.5s;
+
+        animation-iteration-count: infinite;
+        color: darkblue
+    }
+
+    .van-button--round {
+        background: #212770;
+    }
+
+    .van-button--primary {
+        border: 1px solid grey;
+    }
+
+    .logo {
+        animation: backInLeft;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+        text-align: center;
+
+        img {
+            width: 220px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 50px;
+        }
+    }
+
+    .forget-span {
+        text-align: right;
+        margin: 10px 20px 0 0;
+        font-size: 13px;
+        color: blueviolet;
+    }
+
+    .forget {
+        text-align: right;
+    }
+
+    .forget-button {
+        width: 92px;
+
+        button {
+            flex: 8;
+            font-size: 10px;
+            height: 30px;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+
+    }
+
+    .forget-get {
+        display: flex;
+
+        .van-field {
+            flex: 8;
+        }
+
+        .van-field__control {
+            width: 154px;
+        }
+
+        .van-field__label {
+
+
+            span {
+                display: inline-block;
+                padding-top: 3px;
+                padding-left: 5px;
+
+            }
+        }
+
+        .van-cell {
+            line-height: 0.84rem;
+            width: 85px;
+        }
+
+        .van-cell__value {
+            padding-top: 3px;
+        }
+
+        .span {
+            text-align: right;
+            padding-right: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    .register-box {
+        padding: 10px;
+
+        .van-field__label {
+            width: 1.9rem;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-left: 13px;
+        }
+    }
+
+    .forget-box {
+        padding: 10px 7px;
+
+        h1 {
+            font-size: 26px;
+            margin-left: 13px;
+        }
+    }
+}

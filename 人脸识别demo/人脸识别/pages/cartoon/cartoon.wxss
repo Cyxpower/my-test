@@ -1,0 +1,35 @@
+.cartoon {
+    width: 640rpx;
+    margin: 2vw 2vw;
+    position: relative;
+}
+.cartoon image {
+    width: 100%;
+      /* 圆角边框 */
+      border-radius: 24rpx;
+      /* 背景模糊 */
+      box-shadow: 0rpx 0rpx 20rpx 20rpx rgb(175, 168, 168);
+}
+.tip {
+   position: absolute;
+   top: 2vh;
+   right:  -12vw;
+}
+.tag {
+    position: absolute;
+    right: 0vh;
+    width: 12vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    font-size: 12px;
+    background-color: #5ac459;
+    border-radius: 0 12px 12px 0;
+    line-height: 7vw;
+    color: white;
+}
+.tag.active {
+    background-color: red;
+    color: black;
+    font-weight: 700;
+}

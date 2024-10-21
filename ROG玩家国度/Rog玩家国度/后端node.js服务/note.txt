@@ -1,0 +1,132 @@
+body-parser: 解析post请求体模块
+npm i body-parser -S
+
+
+数据库ORM(对象关系映射)模块
+sequelize
+npm i sequelize -S
+
+安装mysql2模块
+npm i mysql2 -S
+
+加盐(撒盐)：主要是的加密结果更加复杂
+
+加密模块
+crypto
+
+发邮件模块
+nodemailer
+
+发邮件官方网
+https://nodemailer.com/about/
+
+
+token: 唯一令牌，一般用于身份验证
+token模块
+jsonwebtoken
+
+https://www.npmjs.com/package/jsonwebtoken
+
+分页查询
+limit 查询位置, 查询数据数量
+
+
+sql语句预处理
+
+     多表查询inner join on
+
+     原始查询
+
+     req.query.email将会替换$email
+
+    sequelize.query('SELECT * FROM business WHERE user_email = $email',
+      { bind: { email: req.query.email }, type: sequelize.QueryTypes.SELECT }
+    ).then(v => {
+      console.log('v ==> ', v);
+      res.send('aaaa');
+    }).catch(err => {
+      res.send('出错');
+    })
+
+
+
+IT笔录
+https://itbilu.com/nodejs/npm/sequelize-docs-v5.html#replacements
+
+AccessKeyID：
+LTAI4Ff43TUiaTKm8dSxLhRn
+
+AccessKeySecret：
+9vkFUwz1ApeJ1fEG4ZfH4TdrzJzjMD
+
+模板号
+SMS_181550530
+
+购物车商品状态
+0: 未付款
+1: 待发货
+2: 待收货
+3: 已收货
+
+================================
+Post.findAll({
+  where: {
+    authorId: 12,
+    status: 'active'
+  }
+});
+
+SELECT * FROM post WHERE authorId = 12 AND status = 'active';
+================================
+
+================================
+Post.findAll({
+  where: {
+    [Op.or]: [{authorId: 12}, {authorId: 13}]
+  }
+});
+
+SELECT * FROM post WHERE authorId = 12 OR authorId = 13;
+================================
+
+
+================================
+Shopcart.destory({
+  where: {
+    userId: 'kk_dd1578014981642',
+    [Op.or]: [
+      {pid: '37b1E01577776956443', createdAt: '2020-01-04 02:35:49'}, 
+      {pid: 'sNgMsd1577777322965', createdAt: '2020-01-04 02:36:45'}
+    ]
+  }
+});
+
+DELETE FROM `Shopcart` WHERE `userId` = 'kk_dd1578014981642' AND (pid = '37b1E01577776956443' AND createdAt = '2020-01-04 02:35:49') OR (pid = 'sNgMsd1577777322965' AND createdAt = '2020-01-04 02:36:45');
+
+
+DELETE FROM `shopcart` WHERE ((`pid` = '37b1E01577776956443' AND `created_at` = '2020-01-04 02:35:49') OR (`pid` = '37b1E01577776956443' AND `created_at` = '2020-01-04 02:36:45') OR (`pid` = 'sNgMsd1577777322965' AND `created_at` = '2020-01-04 03:37:37') OR (`pid` = 'BKHsNk1577777463171' AND `created_at` = '2020-01-04 03:37:51')) AND `user_id` = 'kk_dd1578014981642'
+
+================================
+
+
+mysql事务：多条sql语句一个集合，只要有一条sql执行失败，整个事务都是失败的，失败时事务会进行回滚(恢复所有数据的上一状态)，只有所有sql语句全部执行成功，该事务才是成功
+
+只要事务成功执行，数据是永久存储的
+
+
+server
+  |- config 配置层
+       |- config.js
+
+  |- route 路由层
+       |- route.js
+  
+  |- route_controller 路由控制器层
+       |- route_controller.js
+  
+  |- db 数据库层
+      |- db_config 数据库连接层
+            |- db_config.js
+      |- model 模型层
+            |- model.js
+            |- 其他模型.js

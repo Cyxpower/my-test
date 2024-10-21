@@ -1,0 +1,21 @@
+<van-dialog
+  use-slot
+  title="立即变美"
+  show="{{ show }}"
+  show-cancel-button="true"
+  show-confirm-button="true"
+  cancel-button-text= "铅笔漫画"
+  confirm-button-text="人脸检测"
+  bind:cancel="navigateCartoon"
+  bind:confirm="naviagteFace"
+>
+  <image src="{{img_src}}" mode="aspectFit"/>
+</van-dialog>
+
+<van-button 
+ class="btn" 
+ round
+ bindtap ="openImg"
+ color="linear-gradient(to right, #fd5632, #6149f6)">
+  打开相册
+</van-button>

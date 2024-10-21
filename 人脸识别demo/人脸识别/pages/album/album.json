@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-dialog": "@vant/weapp/dialog/index"
+    },
+    "navigationBarTitleText": "相册",
+    "navigationBarBackgroundColor": "#5ac459"
+}

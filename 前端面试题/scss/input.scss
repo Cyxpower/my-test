@@ -1,0 +1,6 @@
+@use './a.scss';  // 导入scss规则里面的a.scss 并且能够使用私有变量
+.a{
+    margin: 0;
+    color: a.$duration;
+    margin: a.$count;
+}

@@ -1,0 +1,35 @@
+<view class="camera">
+    <!-- 相机 -->
+    <camera class="camera-item" flash="{{flashList[flashCount]}}" device-position="{{devicePositionBoolean ? 'front' : 'back'}}"></camera>
+
+    <!-- tools  工具-->
+    <view class="tools">
+        <!-- 闪光灯 -->
+        <view class="tools-item">
+            <image bindtap="changeFlash" class="tools-img" src="../../image/icons/flash_{{flashList[flashCount]}}.png"></image>
+        </view>
+
+        <!-- 拍摄按钮 -->
+        <view class="take tools-item" bindtap="take"></view>
+
+        <!-- 前后摄像 -->
+        <view class="tools-item">
+            <image bindtap="changeDevice" class="tools-img" src="../../image/icons/transform.png"></image>
+        </view>
+    </view>
+
+    <!-- 弹出框 -->
+    <van-dialog 
+    use-slot 
+    title="立即变美" 
+    show="{{ show }}" 
+    show-confirm-button="true" 
+    show-cancel-button="true"
+    confirm-button-text="人脸检测"    
+    cancel-button-text="图像漫画"
+    bind:confirm="navigateFace"
+    bind:cancel="navigateCartoon"
+    >
+        <image mode="aspectFit" src="{{tempImgPath}}" />
+    </van-dialog>
+</view>

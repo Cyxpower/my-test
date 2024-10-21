@@ -1,0 +1,113 @@
+.menu {
+
+    .active {
+        color: #0c34ba;
+    }
+
+    .search {
+        animation: fadeInDown;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+    }
+
+    .fix {
+        width: 100%;
+        position: fixed;
+        height: 155px;
+        top: 0;
+    }
+
+    .van-grid {
+        animation: fadeInBottomLeft;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+    }
+
+    // .type-box {
+    //     animation: rollIn;
+    //     /* referring directly to the animation's @keyframe declaration */
+    //     animation-duration: 1s;
+    //     display: flex;
+    //     background: #fbfafa;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     .van-grid{
+    //         display: contents;
+    //     }
+
+    //     .type-one {
+    //         margin-top: 10px;
+    //         height: 100%;
+    //         flex: 1;
+    //         text-align: center;
+    //     }
+
+    //     p {
+    //         margin: 5px 0;
+    //     }
+
+
+    // }
+
+    .result-box {
+        animation: fadeInBottomRight;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+        margin-top: 235px;
+        padding-bottom: 75px;
+    }
+
+    .menu-item {
+        animation: fadeIn;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+        height: 100px;
+        background: white;
+        margin: 10px;
+        border-radius: 10px;
+        display: flex;
+
+        img {
+            padding: 10px;
+            height: 80px;
+            width: 80px;
+        }
+
+        .center {
+            padding: 15px 10px 10px 10px;
+            flex: 1;
+        }
+
+        .price {
+            font-size: 15px;
+            font-weight: 700;
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            line-height: 80px;
+            text-align: center;
+            color: #0c34ba;
+            font-weight: 700;
+
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 15px;
+            color: #676a70;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            /* 根据业务需求设置第几行显示省略号 */
+            overflow: hidden;
+        }
+
+        .enname {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #bba8a4;
+        }
+    }
+
+
+}

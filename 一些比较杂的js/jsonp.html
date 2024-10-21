@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jsonp的使用</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="请输入内容" />
+        <button>点我进行淘宝搜索</button>
+        <ol id="list"></ol>
+    </div>
+</body> 
+
+<script>
+
+    const btn = document.querySelector('button')
+    btn.addEventListener('click', () => {
+        const val = document.querySelector('input').value
+        const keyword = encodeURIComponent(val)
+        const date = Date.now()
+        const src = `https://suggest.taobao.com/sug?q=${keyword}&code=utf-8&ts=${date}&callback=mycallback`
+        // const src = `https://dd-search.jd.com/?terminal=pc&newjson=1&ver=2&zip=1&key=${keyword}&pvid=d77cef33932647fe86cbca7153570aef&t=${date}&curr_url=www.jd.com%2F&callback=mycallback`
+
+
+        loadJs(src)    //启动函数
+    })
+
+    function loadJs(src) {
+        const script = document.createElement('script')
+        script.src = src
+        document.body.appendChild(script)
+    }
+
+    function mycallback(data) {
+        console.log(data);
+
+        const arr = data.result.map(item => {
+            return `<li>${item[0]}</li>`
+        })
+        document.getElementById('list').innerHTML = arr.join('')
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+{
+  "entryPagePath": "pages/login/login",
+  "pages":[
+    "pages/login/login",
+    "pages/album/album",
+    "pages/camera/camera",
+    "pages/map/map",
+    "pages/home/home",
+    "pages/face/face",
+    "pages/cartoon/cartoon",
+    "pages/register/register"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5ac459",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+ "tabBar": {
+     "borderStyle":"black",
+     "list": [
+         {
+             "pagePath": "pages/album/album",
+             "text": "相册",
+             "iconPath": "./image/icons/album.png",
+             "selectedIconPath": "./image/icons/ac_album.png"
+         },
+         {
+            "pagePath": "pages/camera/camera",
+            "text": "相机",
+            "iconPath": "./image/icons/camera.png",
+            "selectedIconPath": "./image/icons/ac_camera.png"
+        },
+        {
+            "pagePath": "pages/map/map",
+            "text": "地图",
+            "iconPath": "./image/icons/map.png",
+            "selectedIconPath": "./image/icons/ac_map.png"
+        },
+        {
+            "pagePath": "pages/home/home",
+            "text": "我的",
+            "iconPath": "./image/icons/mine.png",
+            "selectedIconPath": "./image/icons/ac_mine.png"
+        }
+     ]
+ },
+  "sitemapLocation": "sitemap.json"
+}

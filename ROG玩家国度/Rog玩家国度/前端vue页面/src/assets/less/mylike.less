@@ -1,0 +1,81 @@
+.mylike {
+    overflow: hidden;
+
+    .bg {
+
+        animation: fadeInDown;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        height: 100px;
+        background: #0c34ba;
+    }
+
+    .mylike-box {
+        animation: fadeInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        position: relative;
+        top: -20px;
+        overflow: hidden;
+        background: #f7f7f7;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 5px;
+
+
+        .mylike-item {
+
+            width: 33.3%;
+            float: left;
+
+            font-size: 12px;
+            position: relative;
+
+            background: white;
+
+            img {
+                padding: 10px;
+                height: 45%;
+                width: 85%;
+            }
+
+            .mylike-name {
+                margin-left: 10px;
+                margin-bottom: 7px;
+                color: #676a70;
+                font-weight: 400;
+
+            }
+
+            .mylike-enname {
+                font-size: 10px;
+                color: #bba8a4;
+                margin-left: 10px;
+                width: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .mylike-price {
+                margin-left: 10px;
+                color: #0c34ba;
+                font-size: 15px;
+                font-weight: 700;
+                margin-top: 20px;
+                float: left;
+            }
+
+            .trash-bin {
+                float: right;
+                margin-top: 18px;
+                margin-right: 10px;
+            }
+        }
+
+        .mylike-item:nth-child(2n) {
+            margin-right: 0px;
+        }
+    }
+}

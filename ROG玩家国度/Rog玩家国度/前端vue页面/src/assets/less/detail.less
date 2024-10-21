@@ -1,0 +1,187 @@
+.allDetail {
+    background: #f7f7f7;
+
+    .share {
+        display: flex;
+
+        .van-nav-bar {
+            flex: 9;
+
+            .van-nav-bar__title {
+                margin-right: 25%;
+            }
+        }
+
+        .van-cell {
+            flex: 2;
+            padding: 10px 0;
+
+            span {
+                color: #1989fa;
+            }
+
+            .van-icon-share-o:before {
+                color: #1989fa;
+            }
+        }
+    }
+
+    .detail {
+        animation: fadeIn;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+
+        img {
+            width: 100%;
+            height: 70%;
+            border-radius: 0;
+        }
+    }
+
+    .all-detail {
+        animation: fadeInLeft;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+        margin: 5px;
+        padding: 20px;
+        overflow: hidden;
+        padding-bottom: 200px;
+        background: #ffffff;
+        height: 340px;
+        position: relative;
+        top: -40px;
+        border-radius: 10px;
+
+        .put {
+            font-size: 15px;
+            margin-bottom: 20px;
+            display: flex;
+
+            span {
+                flex: 2;
+            }
+
+            .van-rate {
+                flex: 6;
+            }
+        }
+
+    }
+
+
+    .name-detail {
+        display: flex;
+    }
+
+    .detail-name {
+        flex: 8;
+        margin-top: 10px;
+        font-size: 15px;
+        margin-bottom: 7px;
+        color: #676a70;
+        font-weight: 750;
+    }
+
+    .detail-enname {
+        height: 30px;
+        font-size: 10px;
+        color: #bba8a4;
+    }
+
+    .detail-price {
+        flex: 2;
+        color: #0c34ba;
+        font-size: 15px;
+        font-weight: 750;
+
+        span {
+            float: right;
+            position: absolute;
+            top: 35px;
+            right: 20px;
+        }
+    }
+
+    .van-hairline--top {
+        height: 0.4rem;
+        margin-top: 10px;
+    }
+
+    .specs {
+        display: flex;
+    }
+
+    .specs-detail {
+        line-height: 30px;
+        font-size: 15px;
+        flex: 1;
+        color: #646566;
+    }
+
+    .choose-box {
+        width: 70px;
+        flex: 4;
+    }
+
+    .spece-choose {
+        margin-bottom: 10px;
+        border-radius: 15px;
+        background: #e8e8e8;
+        display: inline-block;
+        height: 29px;
+        width: 50px;
+        margin-right: 15px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .active {
+        background: #0c34ba;
+        color: white;
+    }
+
+    .num {
+
+
+        span {
+            font-size: 15px;
+        }
+    }
+
+    .numCount {
+        overflow: hidden;
+        float: right;
+    }
+
+    .van-stepper--round .van-stepper__plus {
+        color: #fff;
+        background-color: blue;
+    }
+
+    .van-stepper--round .van-stepper__minus {
+        color: #c4cdee;
+        background-color: #0c34ba;
+        border: #7d7d7e;
+    }
+
+    .text-detail {
+
+        color: #7c6d7b;
+        font-size: 15px;
+
+    }
+
+    .desc {
+        margin-top: 15px;
+        color: #a4a2a4;
+        font-size: 10px;
+
+    }
+    .van-button__content{
+        animation: pulse;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1.7s;
+
+        animation-iteration-count: infinite;
+    }
+}

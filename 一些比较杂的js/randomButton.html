@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS样式用于设置按钮的初始位置 */
+        #randomButton {
+            background-color: rgb(117, 222, 246);
+            border-radius: 16px;
+            height: 33px;
+            width: 99px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 按钮元素 -->
+    <button id="randomButton">随机按钮</button>
+
+    <script>
+        // 获取按钮元素
+        const button = document.getElementById('randomButton');
+
+        // 鼠标悬停时触发的事件处理函数
+        button.onmouseover = () => {
+            // 获取屏幕的宽度和高度
+            const screenWidth = window.innerWidth;
+            const screenHeight = window.innerHeight;
+
+            // 生成一个随机数，控制按钮的随机位置（确保不超出屏幕范围）
+            const randomTop = Math.random() * (screenHeight - button.offsetHeight);
+            const randomLeft = Math.random() * (screenWidth - button.offsetWidth);
+
+            // 设置按钮的新位置
+            button.style.top = `${randomTop}px`;
+            button.style.left = `${randomLeft}px`;
+        }
+    </script>
+</body>
+
+</html>

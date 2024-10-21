@@ -1,0 +1,17 @@
+<view class="cartoon" wx:if="{{show}}">
+    <image src="{{cartoonImg}}" mode="widthFix"></image>
+    <view class="tip">
+        <view 
+    wx:for="{{cartList}}" 
+    wx:key="name"
+    type="success"
+    class="tag {{index == ind ? 'active' : ''}}"
+    style="top:{{index * 7}}vh"
+    bindtap="changeType"
+    data-name="{{item.enname}}"
+    data-ind="{{index}}"    
+    >{{item.name}}</view>
+    </view>
+
+    <button type="primary" bindtap="downloadImg">保存照片</button>
+</view>

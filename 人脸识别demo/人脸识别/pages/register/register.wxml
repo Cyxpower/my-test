@@ -1,0 +1,19 @@
+<view class="register">
+    <camera class="register-camera" device-position="front"></camera>
+
+    <view   class="register-inp">
+        <van-cell-group>
+        <van-field 
+        value="{{ value }}" 
+        placeholder="请输入用户名" 
+        bind:change="onChange" />
+    </van-cell-group>
+    </view>
+  
+
+    <button 
+    class="register-btn" 
+    type="primary"
+    bindtap="userRegister"
+    >注册</button>
+</view>

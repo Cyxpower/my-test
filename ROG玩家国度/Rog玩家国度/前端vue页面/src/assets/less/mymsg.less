@@ -1,0 +1,84 @@
+.all {
+    .bg {
+        animation: fadeInDown;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        height: 100px;
+        background: #0c34ba;
+    }
+
+    .msg-box {
+        animation: fadeInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        position: relative;
+        top: -0.53333rem;
+        overflow: hidden;
+        background: #ffffff;
+        border-radius: 0.26667rem;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        margin: 0 0.13333rem;
+    }
+    .updateBg{
+        float: right;
+        margin-top: 20px;
+     }
+ 
+
+    .msg-item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #3b4653;
+        margin: 0 15px;
+        height: 70px;
+
+        .item-text {
+            flex: 2;
+            font-size: 14px;
+            line-height: 70px;
+
+        }
+
+        span {
+            color: gray;
+            margin-left: 20px;
+            font-size: 14px;
+            float: right;
+            margin-top: 20px;
+        }
+
+        .van-cell {
+            padding: 0;
+        }
+
+        .van-field__control {
+            color: gray;
+            text-align: right;
+            width: 250px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .avatar {
+            float: right;
+            flex: 3;
+
+            margin: 3px 0 0 10px;
+
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-left: 150px;
+                margin-top: 14px;
+            }
+        }
+    }
+
+
+}

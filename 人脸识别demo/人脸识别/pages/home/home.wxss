@@ -1,0 +1,172 @@
+.home {
+  height: 100vh;
+  position: relative;
+}
+.home::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(201, 196, 196, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.home-bigBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.home-img {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  border-radius: 50%;
+}
+
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.home-name {
+  margin-top: 10vh;
+}
+
+.home-btn {
+  width: 50vw;
+  margin-top: 10vh;
+  /* background-image: linear-gradient(to right, #5ac459,#3d6958,#507564,#509880,#b8dceb); */
+  background: #508671 !important;
+}
+
+.home-box {
+  width: 80vw;
+  height: 80vw;
+  position: relative;
+  /* box-shadow: 0 0 2vw 2vw red; */
+  transform: rotate3d(1, 1, 0, -60deg);
+  transform-style: preserve-3d;
+  animation: ani 3s linear infinite alternate;
+}
+
+@keyframes ani {
+  from {
+    transform: rotate3d(1, 1, 0, -60deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+
+.home-item {
+  width: 50%;
+  height: 50%;
+  /* background-color: rgba(0,255,0,0.2); */
+  position: absolute;
+  /* 距离父元素宽度 / 高度 一半的距离 */
+  left: 50%;
+  top: 50%;
+  /* 向左向上移动宽度 / 高度 一半(本身盒子的宽度)的距离 */
+  margin-left: -25%;
+  margin-top: -25%;
+  /* 添加过渡效果 */
+  transition: all 0.3s;
+}
+
+.front {
+  transform: translateZ(20vw)
+}
+
+.before {
+  transform: translateZ(-20vw)
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(20vw);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(20vw);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(20vw);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(20vw);
+}
+
+/* 起飞的效果 */
+.home-box.active .front {
+  transform: translateZ(40vw);
+}
+.home-box.active .before {
+  transform: translateZ(-40vw)
+}
+
+.home-box.active .left {
+  transform: rotateY(-90deg) translateZ(40vw);
+}
+
+.home-box.active .right {
+  transform: rotateY(90deg) translateZ(40vw);
+}
+
+.home-box.active .top {
+  transform: rotateX(90deg) translateZ(40vw);
+}
+
+.home-box.active .bottom {
+  transform: rotateX(-90deg) translateZ(40vw);
+}
+
+
+/* 小盒子的功能样式 */
+.home-min {
+  width: 25%;
+  height: 25%;
+  /* background-color: rgba(255,0,0,0.3); */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -12.5%;
+  margin-top: -12.5%;
+}
+.min-front {
+  transform: translateZ(10vw);
+}
+.min-before {
+  transform: translateZ(-10vw);
+}
+.min-left {
+  transform: rotateY(-90deg) translateZ(10vw);
+}
+.min-right {
+  transform: rotateY(90deg) translateZ(10vw);
+}
+.min-top {
+  transform: rotateX(90deg) translateZ(10vw);
+}
+.min-bottom {
+  transform: rotateX(-90deg) translateZ(10vw);
+}
+
+/* 背景图片 */
+.bgImg {
+  width: 100vw;
+  height: 100vh;
+}

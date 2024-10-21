@@ -1,0 +1,53 @@
+.safe {
+    height: 100vh;
+
+    .bg {
+        animation: fadeInDown;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        height: 100px;
+        background: #0c34ba;
+    }
+
+    .safe-box {
+
+        animation: fadeInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s;
+        width: 90%;
+        background-color: white;
+        margin: auto;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        right: 0;
+        border-radius: 8px;
+
+    }
+
+    .safe-item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #3b4653;
+        margin: 11px 15px;
+        height: 35px;
+
+        .item-text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .van-button--round {
+        background: #212770;
+    }
+
+    .van-hairline--top {
+        height: 0.4rem;
+        margin-top: 10px;
+    }
+
+    .updatePwd-box {
+        padding: 10px;
+    }
+}
